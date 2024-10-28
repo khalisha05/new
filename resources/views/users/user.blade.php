@@ -11,7 +11,8 @@
         <div class="dropdown mt-auto">
           <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
             @if (Auth::check() && Auth::user()->foto)
-              <img src="{{ asset('uploads/' . Auth::user()->foto) }}" alt="Foto" width="32px" height="32px" class="rounded-circle me-2">
+            <img src="{{ Storage::url(Auth::user()->foto) }}" alt="Foto"  width="32px" height="32px" class="rounded-circle me-2" >
+
             @else
               <img src="{{ asset('images/default-user.png') }}" alt="Default Foto" width="32px" height="32px" class="rounded-circle me-2">
             @endif
@@ -59,7 +60,7 @@
       <!-- <td>{{ $item -> email_admin}}</td> -->
       <!-- <td>{{ $item -> password_admin}}</td> -->
       <!-- <td>{{ $item -> nohp_admin}}</td> -->
-      <td><img src="{{ asset('uploads/' .  $item->foto) }}" alt="Foto pengguna">
+      <td><img src="{{ asset('storage/uploads/' .  $item->foto) }}" alt="Foto pengguna" width="90">
       </td>
       <td>
           <a class="btn btn-outline-success btn-sm" href="{{ route('users.edit', $item->id) }}" role="button">Edit</a>

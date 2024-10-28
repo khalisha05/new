@@ -10,7 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <style>
-        
+
         .top-bar {
             background-color: #f1f1f1;
             padding: 10px 0;
@@ -36,7 +36,7 @@
             background-color: #0056b3;
             border-color: #0056b3;
         }
-        
+
 .logo {
   width: 250px; /* Ukuran logo yang lebih besar */
   height: auto;
@@ -60,8 +60,8 @@
             <div class="container">
                 <!-- Logo -->
                 <a class="navbar-brand" style="  color: #03318C; font-weight: bold;" href="#">
-                    <img src="images/3.png" alt="Speak_InsAcademy Logo" class="logo"> <span></span>
-                    
+                    <img src="images/ps22.png" alt="Speak_InsAcademy Logo" class="logo"> <span></span>
+
                 </a>
                 <!-- Mobile Toggle -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,9 +70,9 @@
                 <!-- Menu Links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                        
+
                         <li class="nav-item">
-                            <a class="nav-link" href="home"><i class="fas fa-home"></i> Home</a>
+                            <a class="nav-link" href="homes"><i class="fas fa-home"></i> Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="materi"><i class="fas fa-book"></i> Materi dan Link Zoom</a>
@@ -87,12 +87,12 @@
                             <a class="nav-link" href="admin"><i class="fas fa-user"></i> Login</a>
                         </li>
                     </ul>
-                    
-                            
-                        
+
+
+
                         </li>
-                    
-                
+
+
                 </div>
             </div>
         </nav>
@@ -106,7 +106,7 @@
 <div class="footer text-center text-white " style="background-color: #03318C;">
         <p>&copy; 2024 Speak_InsAcademy. All rights reserved.</p>
     </div>
-    
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

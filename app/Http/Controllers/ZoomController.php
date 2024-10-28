@@ -2,21 +2,21 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Materi;
+use App\Models\Zoom;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Validation\Rule;
 
-class MateriController extends Controller
+class ZoomController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $materis  = Materi::all();
-        return view('materis.materi', compact('materis'));
+        $zooms  = Zoom::all();
+        return view('zooms.zoom', compact('zooms'));
     }
 
     /**
@@ -24,7 +24,7 @@ class MateriController extends Controller
      */
     public function create()
     {
-        return view('materis.create');
+        return view('zooms.create');
     }
 
     /**
@@ -34,29 +34,28 @@ class MateriController extends Controller
     {
         $request->validate(
             [
-                'materi' => 'required',
+                'zoom' => 'required',
             ],
             [
-                'materi.required' => 'Materi tidak boleh kosong',
-                
+                'zoom.required' => 'Link Zoom tidak boleh kosong',
+
             ]
         );
 
-        $materi = new Materi();
-        $materi->materi = $request['materi'];
-        $materi->save();
+        $zoom = new Zoom();
+        $zoom->zoom = $request['zoom'];
+        $zoom->save();
 
-        return redirect()->route('materis.index');
+        return redirect()->route('zooms.index');
     }
-    
 
     /**
      * Display the specified resource.
      */
     public function show(string $id)
     {
-        $materi = Materi::findOrFail($id);
-        return view('materis.show', compact('materi'));
+        $zoom = Zoom::findOrFail($id);
+        return view('zooms.show', compact('zoom'));
     }
 
     /**
@@ -64,8 +63,8 @@ class MateriController extends Controller
      */
     public function edit(string $id)
     {
-        $materi = Materi::findOrFail($id);
-        return view('materis.edit', compact('materi'));
+        $zoom = Zoom::findOrFail($id);
+        return view('zooms.edit', compact('zoom'));
     }
 
     /**
@@ -75,32 +74,31 @@ class MateriController extends Controller
     {
         $request->validate(
             [
-                'materi' => 'required',
+                'zoom' => 'required',
             ],
             [
-                'materi.required' => 'Materi tidak boleh kosong',
-                
+                'zoom.required' => 'Link Zoom tidak boleh kosong',
+
             ]
         );
 
-        $materi = Materi::findOrFail($id);
+        $zoom = Zoom::findOrFail($id);
 
 
-        $materi->materi = $request['materi'];
-        $materi->save();
+        $zoom->zoom = $request['zoom'];
+        $zoom->save();
 
-        return redirect()->route('materis.index');
+        return redirect()->route('zooms.index');
     }
-
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(string $id)
     {
-        $materi = Materi::findOrFail($id);
-        $materi->delete();
+        $zoom = Zoom::findOrFail($id);
+        $zoom->delete();
 
-        return redirect()->route('materis.index');
+        return redirect()->route('zooms.index');
     }
 }

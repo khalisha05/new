@@ -15,10 +15,7 @@ class CreateMaterisTable extends Migration
     {
         Schema::create('materis', function (Blueprint $table) {
             $table->id();
-            $table->string('judul');
-            $table->text('deskripsi')->nullable();
-            $table->string('materi')->nullable(); // Path ke materi
-            $table->string('link_zoom')->nullable(); // Link Zoom
+            $table->string('materi')->nullable(); 
             $table->timestamps();
         });
     }

@@ -10,9 +10,6 @@ class Materi extends Model
     use HasFactory;
 
     protected $fillable = [
-        'judul',
-        'deskripsi',
         'materi',
-        'link_zoom',
     ];
 }

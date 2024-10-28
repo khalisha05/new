@@ -2,7 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rule;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
@@ -10,13 +14,13 @@ class LoginController extends Controller
     public function index()
     {
         if ($user = Auth::User()) {
-            return redirect()->intended('admin');
+            return redirect()->intended('users');
         }
 
         return view('login');
     }
 
-    public function proses(Request $request)
+    public function store(Request $request)
     {
         $request->validate([
             'email' => 'required',
@@ -27,7 +31,7 @@ class LoginController extends Controller
         if (auth::attempt($kredensial)) {
             $request->session()->regenerate();
             $user = auth::user();
-            return redirect()->intended('admin');
+            return redirect()->intended('users');
         }
 
         return back()->withErrors([

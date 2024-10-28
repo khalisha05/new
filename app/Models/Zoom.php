@@ -5,13 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Infoadmin extends Model
+class Zoom extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'gambar',
-        'judul',
-        'deskripsi',
+        'zoom',
     ];
 }

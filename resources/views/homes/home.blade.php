@@ -9,11 +9,11 @@
                 <div class="col-md-8 text-justify text-white">
                     <h2 class="text-white text-center" >Tentang Speak_InsAcademy</h2>
                     <p class="mt-3">
-                    Speak_InsIAcademy Merupakan Sebuah Platform Lembaga Pelatihan  dan pengembangan yang berfokus untuk Pemberdayaan Diri Menjadi Profesional Publik Speaker 
+                    Speak_InsIAcademy Merupakan Sebuah Platform Lembaga Pelatihan  dan pengembangan yang berfokus untuk Pemberdayaan Diri Menjadi Profesional Publik Speaker
 
 Program Speak_ins Di rancang untuk membantu Sahabat mencapai Prestasi gemilang dengan Sukses Menginspirasi Dengan Komunikasi
 
-Di bentuk Pada 2024 Dengan No Sk Kementrian Hukum Dan HAM Surat Keputusan Opersional: 078/0011/35.73.406/2024 
+Di bentuk Pada 2024 Dengan No Sk Kementrian Hukum Dan HAM Surat Keputusan Opersional: 078/0011/35.73.406/2024
 
 Dengan Puluhan Ribu lulusan Pelatihan Publik Speaker seluruh Indonesia
 
@@ -79,6 +79,6 @@ Dengan Puluhan Ribu lulusan Pelatihan Publik Speaker seluruh Indonesia
         </div>
     </section>
     <br> <br> <br>
-    
-    
+
+
 @endsection

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Home;
+use App\Models\Alumni;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -12,8 +12,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $fillable = Home::all();
-        return view('homes.home');
+        $alumni = Alumni::all();
+        return view('homes.home', compact('alumni'));
     }
 
     /**

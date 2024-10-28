@@ -15,9 +15,9 @@ class CreateDokumentasisTable extends Migration
     {
         Schema::create('dokumentasis', function (Blueprint $table) {
             $table->id();
+            $table->string('gambar');
             $table->string('judul');
-            $table->text('deskripsi')->nullable();
-            $table->string('file')->nullable(); // Path ke file dokumentasi
+            $table->text('deskripsi');
             $table->timestamps();
         });
     }

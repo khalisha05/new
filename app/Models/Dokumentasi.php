@@ -10,8 +10,8 @@ class Dokumentasi extends Model
     use HasFactory;
 
     protected $fillable = [
+        'gambar',
         'judul',
         'deskripsi',
-        'file',
     ];
 }
